@@ -13,6 +13,7 @@
   },
   "autoload": {
     "psr-4": {
+      "GrpcClient\\Sample": "src",
       "GPBMetadata\\Proto": "src/Protobuf/GPBMetadata/Proto",
       "Sample_proto\\Sample": "src/Protobuf/Sample_proto/Sample"
     }
