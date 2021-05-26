@@ -10,5 +10,11 @@
   "require-dev": {
     "phpunit/phpunit": "^8.5",
     "google/protobuf": "^3.17"
+  },
+  "autoload": {
+    "psr-4": {
+      "GPBMetadata\\Proto": "src/Protobuf/GPBMetadata/Proto",
+      "Sample_proto\\Sample": "src/Protobuf/Sample_proto/Sample"
+    }
   }
 }

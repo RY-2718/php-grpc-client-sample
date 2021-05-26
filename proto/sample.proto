@@ -1,0 +1,25 @@
+syntax = "proto3";
+package sample_proto.sample;
+
+import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
+
+service SampleService {
+  rpc SampleRpc(SampleRequest) returns (SampleResponse) {}
+}
+
+message SampleRequest {
+  string id = 1;
+  google.protobuf.Any extension = 2;
+  google.protobuf.Timestamp create_time = 3;
+}
+
+message SampleResponse {
+  string id = 1;
+  google.protobuf.Any extension = 2;
+  google.protobuf.Timestamp create_time = 3;
+}
+
+message PackMessage {
+  string name = 1;
+}

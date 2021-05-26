@@ -1,0 +1,6 @@
+proto_outdir = "./proto/third_party"
+
+[[dependencies]]
+  target = "github.com/protocolbuffers/protobuf/src/google/protobuf"
+  revision = "v3.13.0"
+  path = "google/protobuf"

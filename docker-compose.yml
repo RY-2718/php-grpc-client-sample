@@ -6,3 +6,9 @@ services:
     command: /bin/sh -c "composer install && vendor/bin/phpunit"
     volumes:
       - .:/project:delegated
+
+  protoc:
+    build:
+      context: tools/protoc
+    volumes:
+      - .:/project
